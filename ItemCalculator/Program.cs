@@ -62,18 +62,13 @@ namespace ItemCalculator
 
 		private static int TryParseParse (Action rewindAction)
 		{
-			if (int.TryParse(Console.ReadLine(), out int result))
-			{
-				return result;
-			}
-
-			else
+			if (!int.TryParse(Console.ReadLine(), out int result))
 			{
 				Console.Clear();
 				rewindAction.Invoke();
 			}
 
-			return 0;
+			return result;
 		}
 
 
