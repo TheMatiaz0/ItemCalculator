@@ -8,11 +8,11 @@ namespace ItemCalculator
 		private static int itemQuantity;
 		private static int howManyToSell;
 
-		private static readonly ConsoleColor defaultColor = ConsoleColor.White;
-		private static readonly ConsoleColor inputColor = ConsoleColor.Green;
-		private static readonly ConsoleColor specialColor = ConsoleColor.Red;
-		private static readonly ConsoleColor finalColor = ConsoleColor.Yellow;
-		private static readonly ConsoleColor creditsColor = ConsoleColor.DarkGray;
+		private static ConsoleColor DefaultColor { get; } = ConsoleColor.White;
+		private static ConsoleColor InputColor { get; } = ConsoleColor.Green;
+		private static ConsoleColor SpecialColor { get; } = ConsoleColor.Red;
+		private static ConsoleColor FinalColor { get; } = ConsoleColor.Yellow;
+		private static ConsoleColor CreditsColor { get; } = ConsoleColor.DarkGray;
 
 		static void Main()
 		{
